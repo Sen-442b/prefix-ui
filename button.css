@@ -1,0 +1,182 @@
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.btn{
+    all: unset;
+    /* background-color: rgb(214, 221, 204); */
+    border: none;
+    padding-top:0.5rem;
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+    padding-right: 1rem;
+    cursor: pointer;
+    /* transition-property:"font-size";
+    transition-delay: 1s;
+    transition-delay: 2s; */
+    border-radius: 0.3rem;
+    position:relative;
+
+   
+    
+
+   
+}
+.btn:hover{
+    filter: brightness(var(--hover-brightness));
+}
+
+.btn-cta{
+    background-color: var(--cta-background-color);
+
+}
+.btn-cta::after{
+    content:' __';
+    word-spacing: 0.4em;
+    letter-spacing: -1px;
+  
+    font-size: 1.4em;
+    font-weight: 700;
+    transition-property:"all";
+    transition-duration: 2s;
+    
+    
+   animation-name: blip;
+   animation-duration: 0.7s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+   
+
+}
+
+.btn-cta:hover::after{
+   
+    animation-play-state: paused;
+     content:" ->";
+    
+}
+
+
+
+
+.btn-outlined{
+    background:rgb(243, 238, 238);
+    border: 0.1rem solid var(--cta-background-color)
+}
+
+
+.btn-outlined:hover{
+    background-color: var(--light-text-color);
+box-shadow:  4px 4px 18px var(--primary-background-color);
+}
+
+.btn-lrg{
+    font-size:1.3em;
+    padding-left:1em ;
+    padding-right:1em ;
+  
+   
+}
+
+
+.btn-sml{
+    font-size:0.6em;
+ 
+   
+   
+
+}
+
+
+.btn-icon{
+   margin-right: 0.5em;
+   margin-left: 0px;
+  
+ 
+
+}
+
+.btn-icon-outlined{
+    color: var(--cta-background-color)
+}
+
+
+/* .btn-icon::before{
+   content: url("assets/shopping-cart-svgrepo-com.svg");
+   background-repeat: no-repeat;
+   background-position: center;
+   position: absolute;
+   height: 20px;
+   width: 20px;
+   left: 8px;
+   fill: green;
+   padding: 0;
+   filter: invert(76%) sepia(81%) saturate(942%) hue-rotate(3deg) brightness(108%) contrast(108%);
+  
+ 
+ 
+} */
+
+
+
+
+
+
+.btn:disabled{
+    pointer-events:none;
+
+    background-color:rgba(128, 128, 128, 0.514);
+    opacity: 0.5;
+    cursor:not-allowed;
+    
+    /* content:"";
+    position: absolute;
+    background-color:rgba(223, 197, 197, 0.8);
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    opacity:0.6;
+    cursor:not-allowed; */
+    
+}
+
+
+
+
+.btn:disabled:hover{
+    background-color:rgba(223, 197, 197, 0.8)
+    
+    
+}
+
+.fas{
+    font-size: 1.2em;
+    margin-right: 0.8em;
+    margin-left: 0;
+}
+
+
+
+
+@keyframes blip {
+    0%{
+        opacity: 0.2;
+    }
+    40%{
+        opacity:0.4;
+    }
+    80%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+
+
