@@ -1,57 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="alert.css">
-    <link rel="stylesheet" href="buttons.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-      <script src="https://kit.fontawesome.com/6f74bb313d.js" crossorigin="anonymous"></script> 
-    
-</head>
-<body  id="classList-inheritance-body">
+    <!-- <link rel="stylesheet" href="./source/button.css" /> -->
+    <link rel="stylesheet" href="./source/alert.css" />
+
+    <script
+      src="https://kit.fontawesome.com/6f74bb313d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="classList-inheritance-body">
     <div class="alert alert-primary alert-text">
-        This is a primary text in primary alert box with <a class="alert-link-text" href="#">alert link</a>
+      This is a primary text in primary alert box with
+      <a class="alert-link-text" href="#">alert link</a>
     </div>
 
-    <div class="alert alert-secondary alert-text ">This is a random text to show secondary alert box with  <a class="alert-link-text" href="#">alert link</a></div>
-    <div class="alert alert-danger alert-text "> <span><i class="fas fa-exclamation-circle"></i></span>  This is a danger text in danger alert box</div>
+    <div class="alert alert-secondary alert-text">
+      This is a random text to show secondary alert box with
+      <a class="alert-link-text" href="#">alert link</a>
+    </div>
+    <div class="alert alert-danger alert-text">
+      <span><i class="fas fa-exclamation-circle"></i></span> This is a danger
+      text in danger alert box
+    </div>
 
-    <div class="alert alert-success alert-text "> <span><i class="fas fa-check-circle"></i></span>  This is a positive alert text in alert box</div>
+    <div class="alert alert-success alert-text">
+      <span><i class="fas fa-check-circle"></i></span> This is a positive alert
+      text in alert box
+    </div>
 
-        <div class="alert alert-immediate-action alert-text "> <span><i class="fas fa-radiation-alt"></i></span> This is a Warning text in an alert box</div>
+    <div class="alert alert-immediate-action alert-text">
+      <span><i class="fas fa-radiation-alt"></i></span> This is a Warning text
+      in an alert box
+    </div>
 
-            <div class="alert alert-immediate-action alert-text "><span><i class="fas fa-radiation-alt"></i></span> This is a text with close button 
-            <button class="remove-alert-btn"></button></div>
+    <div class="alert alert-immediate-action alert-text">
+      <span><i class="fas fa-radiation-alt"></i></span> This is a text with
+      close button <button class="remove-alert-btn"></button>
+    </div>
 
+    <h3>Buttons</h3>
+    <button class="btn btn-cta dynamic-text-color">Get Started</button>
+    <button class="btn btn-outlined dynamic-text-color">Outlined</button>
+    <button class="btn alert-primary alert-text">Primary</button>
+    <button class="btn alert-secondary alert-text">Secondary</button>
+    <button class="btn alert-success alert-text">Success</button>
+    <button class="btn alert-danger alert-text">Danger</button>
+    <button class="btn alert-immediate-action alert-text">
+      immediate action
+    </button>
+    <button class="btn alert-success alert-text btn-lrg">Large</button>
+    <button class="btn btn-outlined btn-sml">Small</button>
+    <button class="btn alert-primary" disabled>Disabled</button>
+    <button class="btn btn-outlined dynamic-text-color">
+      <span class="btn-icon btn-icon-outlined"
+        ><i class="fas fa-shopping-cart"></i></span
+      >Cart
+    </button>
+    <button class="btn btn-cta dynamic-text-color">
+      <span class="btn-icon"><i class="fas fa-shopping-cart"></i></span>Cart
+    </button>
+    <span class="alert-secondary alert-text"
+      ><i class="fas fa-shopping-cart"></i
+    ></span>
 
-
-                <h3>Buttons</h3>
-            <button class="btn btn-cta dynamic-text-color" >Get Started</button>
-            <button class="btn btn-outlined dynamic-text-color" >Outlined </button>
-            <button class="btn alert-primary alert-text" >Primary </button>
-            <button class="btn alert-secondary alert-text" >Secondary </button>
-            <button class="btn alert-success alert-text" >Success </button>
-            <button class="btn alert-danger alert-text" >Danger </button>
-            <button class="btn alert-immediate-action alert-text" >immediate action </button>
-            <button class="btn alert-success alert-text btn-lrg"  >Large </button>
-            <button class="btn btn-outlined btn-sml" >Small </button>
-            <button class="btn alert-primary" disabled >Disabled </button>
-            <button class="btn btn-outlined dynamic-text-color"><span class="btn-icon btn-icon-outlined"><i class="fas fa-shopping-cart"></i></span>Cart</button>
-            <button class="btn btn-cta dynamic-text-color"><span class="btn-icon "><i class="fas fa-shopping-cart"></i></span>Cart</button>
-            <span class="alert-secondary alert-text"><i class="fas fa-shopping-cart"></i></span>
-
-          <span style="background-color: black;">  <a  class="dynamic-text-color" href="#">Link text</a></span>
-            
-
-
-
-
-    
-    
-</body>
-<script src="main.js"></script>
+    <span style="background-color: black">
+      <a class="dynamic-text-color" href="#">Link text</a></span
+    >
+  </body>
+  <script src="./source/main.js"></script>
 </html>
