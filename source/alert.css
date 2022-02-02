@@ -3,25 +3,33 @@
 @import url("button.css");
 
 *{
-    box-sizing: border-box;
+        box-sizing: border-box;
+        word-wrap: break-word;
+        
+    
+    
 }
 
 :root{
-    --primary-background-color:#93C5FD;
-    --secondary-background-color:#D8B4FE;
+    --primary-alert-background-color:#93C5FD;
+    --secondary-alert-background-color:#D8B4FE;
     --danger-background-color:#FCA5A5;
-    --some-color:hsl(200.2247191011236,64.27860696517412%,40.58823529411765%) ;
+    /* --some-color:hsl(200.2247191011236,64.27860696517412%,40.58823529411765%) ; */
     --hover-brightness:1.2;
     --border-radius-custom:0.3rem;
     --cta-background-color:#0ea5e9;
     --dark-text-color:#101314;
     --light-text-color:rgb(243, 234, 234);
+    --primary-background-color:#f1f5f9;
+    --universal-box-shadow:0 3px 3px rgba(0,0,0,0.2);
+    
 
 
 }
 
 body{
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgba(255, 255, 255, 0.863);
 }
 .alert{
     border-radius: 0.4rem;
@@ -38,12 +46,13 @@ body{
 }
 
 .alert-primary{
-    background-color:var(--primary-background-color);
+    background-color:var(--primary-alert-background-color);
+
   
     
 }
 .alert-secondary{
-    background-color: var(--secondary-background-color);
+    background-color: var(--secondary-alert-background-color);
 }
 
 

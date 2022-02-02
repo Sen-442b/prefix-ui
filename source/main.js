@@ -9,10 +9,18 @@ const lightTextColor =
 const rootCtaColor = getComputedStyle(cssRootElement).getPropertyValue(
   "--cta-background-color"
 );
+const primaryBackgroundColor = getComputedStyle(cssRootElement).getPropertyValue(
+  "--primary-background-color"
+);
+console.log(primaryBackgroundColor)
 
 const bodyEle = document.getElementById("classList-inheritance-body");
 const btnIconElementList = document.querySelectorAll(".btn-icon");
 
+
+const linkColor = document.querySelector(".link");
+const lorem = window.getComputedStyle(linkColor).getPropertyValue("background-color")
+console.log(lorem);
 //inheritDynamicColorFromParent(bodyEle.children);  HERE
 
 //console.log(bodyId.children[0].classList);
@@ -58,7 +66,9 @@ if (alertTextList) {
 if (dynamicTextColor) {
   dynamicTextColor.forEach((item) => {
     const eleBackgroundColor = getBackgroundColor(item);
+    
     const [red, green, blue] = getExtractedRgb(eleBackgroundColor);
+    console.log(red,green,blue + " element is" + item)
     const backgroundColorBrightness = computeColorBrightness(
       Number(red),
       Number(green),
@@ -108,7 +118,24 @@ if (btnIconElementList) {
 
 
 function getExtractedRgb(eleBackgroundColor) {
-  return eleBackgroundColor.match(/\d+/g).slice(0, 3); //Regex
+  let [r,g,b]= eleBackgroundColor.match(/\d+/g).slice(0, 3); //Regex
+  if(Number(r)===0&&Number(g)===0&&Number(b)===0){
+    
+    if(primaryBackgroundColor.includes("#")){
+      return hexToRgb(primaryBackgroundColor)
+
+    }else{
+      return getExtractedRgb(primaryBackgroundColor)
+    
+    }
+  }else{
+    return [r,g,b];
+
+  }
+  
+  
+
+   
 }
 
 function getBackgroundColor(element) {
@@ -158,3 +185,16 @@ function rgbToHsl(red, green, blue) {
 
   return [hue * 360, saturation * 100, light * 100];
 }
+
+
+
+function hexToRgb(hexValue){
+  let result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hexValue);
+  return result ? [
+     parseInt(result[1], 16),
+     parseInt(result[2], 16),
+     parseInt(result[3], 16)
+  ]: null;
+
+}
+
