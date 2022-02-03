@@ -6,33 +6,29 @@ const darkTextColor =
   getComputedStyle(cssRootElement).getPropertyValue("--dark-text-color");
 const lightTextColor =
   getComputedStyle(cssRootElement).getPropertyValue("--light-text-color");
-const rootCtaColor = getComputedStyle(cssRootElement).getPropertyValue(
-  "--cta-background-color"
-);
-const primaryBackgroundColor = getComputedStyle(
-  cssRootElement
-).getPropertyValue("--primary-background-color");
-console.log(primaryBackgroundColor);
+const rootCtaColor = getComputedStyle(cssRootElement).getPropertyValue("--cta-background-color");
+const primaryBackgroundColor = getComputedStyle(cssRootElement).getPropertyValue("--primary-background-color");
+
+
 
 const bodyEle = document.getElementById("classList-inheritance-body");
 const btnIconElementList = document.querySelectorAll(".btn-icon");
 
+
 const linkColor = document.querySelector(".link");
-const lorem = window
-  .getComputedStyle(linkColor)
-  .getPropertyValue("background-color");
-console.log(lorem);
+const lorem = window.getComputedStyle(linkColor).getPropertyValue("background-color")
+
 //inheritDynamicColorFromParent(bodyEle.children);  HERE
 
 //console.log(bodyId.children[0].classList);
 
 function inheritDynamicColorFromParent(elementChildren) {
-  console.log("check");
+
   for (let element of elementChildren) {
     element.classList.add("dynamic-text-color");
     //console.log(element)
   }
-  console.log(elementChildren);
+  
   //element.children.forEach(item=>item.classList.add("dynamic-text-color"));
 }
 
@@ -40,7 +36,7 @@ function inheritDynamicColorFromParent(elementChildren) {
 
 if (alertTextList) {
   alertTextList.forEach((item) => {
-    console.log(item);
+  
     const eleBackgroundColor = getBackgroundColor(item);
     const rgbColors = getExtractedRgb(eleBackgroundColor);
     //    console.log(rgbColors)
@@ -52,7 +48,7 @@ if (alertTextList) {
     item.style.color = `hsl(${bgHue}, ${
       bgSat > 50 ? bgSat - 40 : bgSat + 40
     }% , ${bgLight > 50 ? bgLight - 40 : bgLight + 40}%)`;
-    console.log(window.getComputedStyle(item).getPropertyValue("color"));
+    
 
     /*
         let colorBrightness=computeColorBrightness(numRed,numGreen,numBlue);
@@ -67,15 +63,15 @@ if (alertTextList) {
 if (dynamicTextColor) {
   dynamicTextColor.forEach((item) => {
     const eleBackgroundColor = getBackgroundColor(item);
-
+    
     const [red, green, blue] = getExtractedRgb(eleBackgroundColor);
-    console.log(red, green, blue + " element is" + item);
+    
     const backgroundColorBrightness = computeColorBrightness(
       Number(red),
       Number(green),
       Number(blue)
     );
-    console.log(backgroundColorBrightness);
+    
     if (backgroundColorBrightness <= 0.5) {
       item.style.color = lightTextColor;
     } else {
@@ -84,7 +80,7 @@ if (dynamicTextColor) {
   });
 }
 
-/*
+   /*
 if (btnIconElementList) {
   btnIconElementList.forEach((element) => {
     const parentClassList = element.parentNode.classList;
@@ -114,17 +110,32 @@ if (btnIconElementList) {
 
  */
 
+
+
+
+
 function getExtractedRgb(eleBackgroundColor) {
-  let [r, g, b] = eleBackgroundColor.match(/\d+/g).slice(0, 3); //Regex
-  if (Number(r) === 0 && Number(g) === 0 && Number(b) === 0) {
-    if (primaryBackgroundColor.includes("#")) {
+  let [r,g,b]= eleBackgroundColor.match(/\d+/g).slice(0, 3); //Regex
+  
+  if(Number(r)===0&&Number(g)===0&&Number(b)===0){
+  
+    
+    if(primaryBackgroundColor.includes("#")){
+      
       return hexToRgb(primaryBackgroundColor);
-    } else {
+
+    }else{
       return getExtractedRgb(primaryBackgroundColor);
+    
     }
-  } else {
-    return [r, g, b];
+  }else{
+    return [r,g,b];
+
   }
+  
+  
+
+   
 }
 
 function getBackgroundColor(element) {
@@ -175,13 +186,13 @@ function rgbToHsl(red, green, blue) {
   return [hue * 360, saturation * 100, light * 100];
 }
 
-function hexToRgb(hexValue) {
-  let result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hexValue);
-  return result
-    ? [
-        parseInt(result[1], 16),
-        parseInt(result[2], 16),
-        parseInt(result[3], 16),
-      ]
-    : null;
+
+
+function hexToRgb(hexValue){
+  const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hexValue);
+  
+
+  return result ? [parseInt(result[1], 16),parseInt(result[2], 16),parseInt(result[3], 16)]: null;
+
 }
+

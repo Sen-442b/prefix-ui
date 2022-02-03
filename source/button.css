@@ -58,6 +58,7 @@ body {
 
 .btn-outlined:hover {
   background-color: var(--light-text-color);
+  color:var(--cta-background-color);
   box-shadow: var(--outline-box-shadow);
 }
 
@@ -97,11 +98,8 @@ a {
   all: unset;
 }
 
-.btn:disabled:hover {
-  background-color: rgba(223, 197, 197, 0.8);
-}
 
-.dynamic-text-color:hover {
+.hover-cta-color:hover {
   color: var(--cta-background-color);
 }
 
@@ -131,7 +129,7 @@ a {
 }
 
 .box-shadow-dense {
-  box-shadow: 6px 2px 10px 3px #3c3013;
+  box-shadow: 6px 4px 10px 3px #bfaee7;
 }
 
 .blip-animation {
