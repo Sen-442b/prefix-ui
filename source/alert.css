@@ -1,159 +1,110 @@
-
-
 @import url("button.css");
 
-*{
-        box-sizing: border-box;
-        word-wrap: break-word;
-        
-    
-    
+* {
+  box-sizing: border-box;
+  word-wrap: break-word;
 }
 
-:root{
-    --primary-alert-background-color:#93C5FD;
-    --secondary-alert-background-color:#D8B4FE;
-    --danger-background-color:#FCA5A5;
-    /* --some-color:hsl(200.2247191011236,64.27860696517412%,40.58823529411765%) ; */
-    --hover-brightness:1.2;
-    --border-radius-custom:0.3rem;
-    --cta-background-color:#0ea5e9;
-    --dark-text-color:#101314;
-    --light-text-color:rgb(243, 234, 234);
-    --primary-background-color:#f1f5f9;
-    --universal-box-shadow:0 3px 3px rgba(0,0,0,0.2);
-    
-
-
+:root {
+  --primary-alert-background-color: #93c5fd;
+  --secondary-alert-background-color: #d8b4fe;
+  --danger-background-color: #fca5a5;
+  --alert-immediate-action-bg-color: #fcd34d;
+  --alert-success-bg-color: #86efac;
+  --hover-brightness: 1.2;
+  --border-radius-custom: 0.3rem;
+  --cta-background-color: #0ea5e9;
+  --dark-text-color: #101314;
+  --light-text-color: rgb(243, 234, 234);
+  --primary-background-color: #f1f5f9;
+  --universal-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  --outline-box-shadow: 4px 4px 2px #86efac;
 }
 
-body{
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: rgba(255, 255, 255, 0.863);
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: rgba(255, 255, 255, 0.863);
 }
-.alert{
-    border-radius: 0.4rem;
-    padding-top: 1rem;
-    padding-right:  2.5rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-    font-size: 1rem;
-    margin: 1rem 0;
-    position: relative;
-    
-
-    
+.alert {
+  border-radius: 0.4rem;
+  padding-top: 1rem;
+  padding-right: 2.5rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  font-size: 1rem;
+  margin: 1rem 0;
+  position: relative;
 }
 
-.alert-primary{
-    background-color:var(--primary-alert-background-color);
-
-  
-    
+.alert-primary {
+  background-color: var(--primary-alert-background-color);
 }
-.alert-secondary{
-    background-color: var(--secondary-alert-background-color);
+.alert-secondary {
+  background-color: var(--secondary-alert-background-color);
 }
 
-
-.alert-danger{
-    background-color:var(--danger-background-color) ;
-    
-
-}
-/* .alert-text{
-    background-color:inherit;
-} */
-
-
-.alert-icon{
-    
-    font-size: 10px;
-
-    
-   
+.alert-danger {
+  background-color: var(--danger-background-color);
 }
 
-
-.alert-success{
-    background-color:#86efac;
-
+.alert-icon {
+  font-size: 10px;
 }
 
-.alert-immediate-action{
-    background-color:#fcd34d;
+.alert-success {
+  background-color: var(--alert-success-bg-color);
 }
 
-
-
-
-
-
-
-
-.material-icons{
-    font-size: 2rem;
-    margin-right:0.5rem;
-    margin-top: 0.4rem;
-    
+.alert-immediate-action {
+  background-color: var(--alert-immediate-action-bg-color);
 }
 
-
-
-.remove-alert-btn{
-    
-    position: absolute;
-    background-image: url("../assets/cancel_black_24dp.svg"); 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center;
-    background-color:transparent;
-    border: none;
-    width: 2rem;
-    height: 2rem;
-    
-    cursor: pointer;
-   
-    right: 2rem;
-    top:12px;
-
-    /* animation-duration: 0.1s;
-    animation-delay: 2s;
-    animation-name:shake;
-    animation-iteration-count:infinite;
-    animation-timing-function: linear;
-    animation-direction: alternate; */
-    
-
-
+.material-icons {
+  font-size: 2rem;
+  margin-right: 0.5rem;
+  margin-top: 0.4rem;
 }
 
+.remove-alert-btn {
+  position: absolute;
+  background-image: url("../assets/cancel_black_24dp.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  width: 2rem;
+  height: 2rem;
 
+  cursor: pointer;
 
-.alert:hover{
-    filter: brightness(1.2);
-   
+  right: 2rem;
+  top: 12px;
 }
 
-.remove-alert-btn:hover{
-    animation:shake 0.1s 4 linear ;
-    animation-direction: alternate;
+.alert:hover {
+  filter: brightness(1.2);
 }
 
-.alert-link-text{
-    color:inherit;
-    font-weight: bolder;
+.remove-alert-btn:hover {
+  animation: shake 0.1s 4 linear;
+  animation-direction: alternate;
+}
+
+.alert-link-text {
+  color: inherit;
+  font-weight: bolder;
 }
 
 @keyframes shake {
-    0%, 40%{
-        transform:translateX(2px);
-    }
+  0%,
+  40% {
+    transform: translateX(2px);
+  }
 
-    60%,100%{
-        transform:translateX(-2px);
-    }
-    
+  60%,
+  100% {
+    transform: translateX(-2px);
+  }
 }
-
-
