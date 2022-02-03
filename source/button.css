@@ -129,7 +129,7 @@ a {
 }
 
 .box-shadow-dense {
-  box-shadow: 6px 4px 10px 3px #bfaee7;
+  box-shadow:var(--box-shadow-dense);
 }
 
 .blip-animation {
