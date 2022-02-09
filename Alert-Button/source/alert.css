@@ -1,9 +1,6 @@
 @import url("button.css");
 
-* {
-  box-sizing: border-box;
-  word-wrap: break-word;
-}
+
 
 :root {
   --primary-alert-background-color: #93c5fd;
