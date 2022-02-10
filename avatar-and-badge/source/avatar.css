@@ -1,16 +1,5 @@
-@import url("./badge.css");
-@import url("/Alert-Button/source/alert.css");
+@import url("../../global.css");
 
-
-:root {
-  
-  --white-temp:rgb(255, 255, 255);
-  --online-status-color:rgb(59,165,93);
-  --dnd-status-color:#ed4245;
-  --offline-status-color:rgb(161, 159, 159);
-  --generic-transition:0.3s all ease-in;
-
-}
 
 
 .avatar-container {
@@ -120,6 +109,8 @@
             
           
 }
+
+
 
 .temp-cta-color{
    

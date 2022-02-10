@@ -1,23 +1,7 @@
-@import url("button.css");
+@import url("../../global.css");
 
 
 
-:root {
-  --primary-alert-background-color: #93c5fd;
-  --secondary-alert-background-color: #d8b4fe;
-  --danger-background-color: #fca5a5;
-  --alert-immediate-action-bg-color: #fcd34d;
-  --alert-success-bg-color: #86efac;
-  --hover-brightness: 1.2;
-  --border-radius-custom: 0.3rem;
-  --cta-background-color: #0ea5e9;
-  --dark-text-color: #101314;
-  --light-text-color: rgb(243, 234, 234);
-  --primary-background-color:#f1f5f9;
-  --universal-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-  --outline-box-shadow: 4px 4px 2px #86efac;
-  --box-shadow-dense:6px 4px 10px 3px #bfaee7;
-}
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -93,6 +77,7 @@ body {
 .alert-link-text {
   color: inherit;
   font-weight: bolder;
+  text-decoration:underline;
 }
 
 @keyframes shake {
@@ -105,4 +90,13 @@ body {
   100% {
     transform: translateX(-2px);
   }
+}
+
+
+.light-text-color{
+  color:var(--light-text-color);
+}
+
+.dark-text-color{
+  color:var(--dark-text-color);
 }

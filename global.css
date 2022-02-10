@@ -1,0 +1,49 @@
+@import url("Alert-Button/source/alert.css");
+@import url("Alert-Button/source/button.css");
+@import url("avatar-and-badge/source/avatar.css");
+@import url("avatar-and-badge/source/badge.css");
+@import url("Card/source/card.css");
+
+
+:root{
+    
+    /*Alert and Button */
+  --primary-alert-background-color: #93c5fd;
+  --secondary-alert-background-color: #d8b4fe;
+  --danger-background-color: #fca5a5;
+  --alert-immediate-action-bg-color: #fcd34d;
+  --alert-success-bg-color: #86efac;
+  --hover-brightness: 1.2;
+  --border-radius-custom: 0.3rem;
+  --cta-background-color: #0ea5e9;
+  --dark-text-color: #101314;
+  --light-text-color: rgb(243, 234, 234);
+  --primary-background-color:#f1f5f9;
+  --universal-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  --outline-box-shadow: 2px 2px 8px #86efac;
+  --box-shadow-dense:6px 4px 10px 3px #bfaee7;
+
+   /*Avatar and Badge */
+   --white-temp:rgb(255, 255, 255);
+   --online-status-color:rgb(59,165,93);
+   --dnd-status-color:#ed4245;
+   --offline-status-color:rgb(161, 159, 159);
+   --generic-transition:0.3s all ease-in;
+   --universal-border:0.3em solid rgb(243, 234, 234);
+
+
+   /*Card */
+   --card-surface: #fff;
+    --card-box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%);
+    --thin-text-color: rgba(0, 0, 0, 0.4);
+    --background-theme: #fdfcfd;
+    --red-variant:rgb(238, 69, 69);
+
+
+
+
+}
+
+a, button{
+    all: unset;
+}
