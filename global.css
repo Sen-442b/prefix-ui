@@ -9,15 +9,22 @@
     
     /*Alert and Button */
   --primary-alert-background-color: #93c5fd;
+  --primary-alert-text-color:#147af0;
   --secondary-alert-background-color: #d8b4fe;
+  --secondary-alert-text-color: #953ff0;
+  
   --danger-background-color: #fca5a5;
+  --danger-text-color:#a11d1d;
   --alert-immediate-action-bg-color: #fcd34d;
+  --alert-immediate-action-txt-color:rgb(165, 165, 58);
   --alert-success-bg-color: #86efac;
+  --alert-success-txt-color:#1c8d46;
   --hover-brightness: 1.2;
   --border-radius-custom: 0.3rem;
   --cta-background-color: #0ea5e9;
   --dark-text-color: #101314;
-  --light-text-color: rgb(243, 234, 234);
+  --light-text-color: rgb(209, 198, 198);
+  --grey-text-color:rgb(241, 226, 226);
   --primary-background-color:#f1f5f9;
   --universal-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   --outline-box-shadow: 2px 2px 8px #86efac;
@@ -30,6 +37,7 @@
    --offline-status-color:rgb(161, 159, 159);
    --generic-transition:0.3s all ease-in;
    --universal-border:0.3em solid rgb(243, 234, 234);
+   
 
 
    /*Card */
@@ -38,6 +46,7 @@
     --thin-text-color: rgba(0, 0, 0, 0.4);
     --background-theme: #fdfcfd;
     --red-variant:rgb(238, 69, 69);
+    --font-weight-light:400;
 
 
 
