@@ -1,25 +1,17 @@
-.image-container{
-    width: 30rem;
-    
-
+.image-container {
+  width: 30rem;
 }
 
-
-
-.image-resp{
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
+.image-resp {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
-
-.rounded-image-container{
-    width: 10rem;
+.rounded-image-container {
+  width: 10rem;
 }
 
-
-
-.border-rad-100{
-    border-radius: 100%;
-
+.border-rad-100 {
+  border-radius: 100%;
 }
