@@ -5,7 +5,6 @@ body {
 }
 
 .btn {
-
   outline: none;
 
   border: none;
@@ -29,6 +28,7 @@ body {
 
 .btn-cta {
   background-color: var(--cta-background-color);
+  color: var(--light-text-color);
 }
 
 .btn-cta-anim::after {
@@ -54,12 +54,11 @@ body {
 
 .btn-outlined {
   background-color: var(--light-text-color);
-
 }
 
 .btn-outlined:hover {
   background-color: var(--light-text-color);
-  color:var(--cta-background-color);
+  color: var(--cta-background-color);
   box-shadow: var(--outline-box-shadow);
 }
 
@@ -79,13 +78,10 @@ body {
 }
 
 .btn-icon-outlined {
-  color:var(--alert-success-bg-color);
-  
- 
+  color: var(--alert-success-bg-color);
 }
-.btn-icon-outlined:hover{
-  color:var(--cta-background-color)
-
+.btn-icon-outlined:hover {
+  color: var(--cta-background-color);
 }
 
 .btn-icon {
@@ -101,14 +97,11 @@ body {
   cursor: not-allowed;
 }
 
-
-
 .hover-cta-color:hover {
   color: var(--cta-background-color);
 }
 
 .link {
-  
   text-decoration: underline;
   cursor: pointer;
 }
@@ -133,7 +126,7 @@ body {
 }
 
 .box-shadow-dense {
-  box-shadow:var(--box-shadow-dense);
+  box-shadow: var(--box-shadow-dense);
 }
 
 .blip-animation {
