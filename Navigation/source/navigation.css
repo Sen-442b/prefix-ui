@@ -1,0 +1,27 @@
+@import url("../../global.css");
+
+.nav-bar {
+  width: 100%;
+  background-color: var(--light-text-color);
+  border-radius: var(--border-radius-custom);
+  box-shadow: var(--universal-box-shadow);
+  min-height: 10vh;
+  padding: 0 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-item {
+  display: flex;
+}
+
+.nav-image-container {
+  width: 4rem;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-bar {
+    justify-content: center;
+  }
+}

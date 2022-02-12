@@ -3,8 +3,9 @@
 @import url("avatar-and-badge/source/avatar.css");
 @import url("avatar-and-badge/source/badge.css");
 @import url("Card/source/card.css");
+@import url("Image/source/image.css");
 @import url("Input/source/input.css");
-
+@import url("Modal/source/modal.css");
 
 :root{
     
@@ -62,17 +63,30 @@ html {
     box-sizing: inherit;
   }
 
-a, button{
+a,ul, li, button{
     all: unset;
 }
-
+a{
+  cursor: pointer;
+}
 .border-radius-100{
     border-radius: 100%;
+}
+.border-rad-20{
+  border-radius: 20%;
 }
 .flex-column{
     display: flex;
     flex-direction: column;
 }
+
+.flex-gap-mdm{
+  display: flex;
+  align-items: center;
+  
+  gap:0.5em;
+}
+
 .flex-center{
     display:flex;
     align-items: center;
@@ -156,3 +170,11 @@ a, button{
   .box-shadow-none {
     box-shadow: none;
   }
+
+
+
+  .cta-text-hover:hover{
+    color:var(--cta-background-color)
+  }
+
+ 
