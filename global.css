@@ -3,6 +3,7 @@
 @import url("avatar-and-badge/source/avatar.css");
 @import url("avatar-and-badge/source/badge.css");
 @import url("Card/source/card.css");
+@import url("Input/source/input.css");
 
 
 :root{
@@ -29,6 +30,7 @@
   --universal-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   --outline-box-shadow: 2px 2px 8px #86efac;
   --box-shadow-dense:6px 4px 10px 3px #bfaee7;
+  --transparent-black-color:rgba(0,0,0,0.3);
 
    /*Avatar and Badge */
    --white-temp:rgb(255, 255, 255);
@@ -53,6 +55,104 @@
 
 }
 
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
 a, button{
     all: unset;
 }
+
+.border-radius-100{
+    border-radius: 100%;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.flex-center{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+.flex-spc-arnd {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .flex-spc-btwn {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+.text-align-center{
+    text-align: center;
+
+
+}
+
+
+
+
+
+.padding-sml {
+    padding: 0.5em;
+  }
+.padding-mdm{
+    padding: 1em;
+}  
+.padding-lrg{
+    padding:1.5;
+}
+
+
+
+.curved-border {
+    border-radius: 0.5em 0.5em 0.5em 0.5em;
+  }
+  
+  .curved-border-top {
+    border-radius: 0.5em 0.5em 0 0;
+  }
+  
+  .curved-border-bottom {
+    border-radius: 0 0 0.5em 0.5em;
+  }
+  
+
+
+  .dark-txt-light-bg{
+      color:var(--dark-text-color);
+      background-color: var(--light-text-color);
+  }
+
+  .dark-txt-light-bg:hover{
+    background-color:var(--dark-text-color);
+    color: var(--light-text-color);
+
+  }
+
+
+  
+.pos-abs-top-left {
+    position: absolute;
+    top: 1em;
+    left: 0;
+  }
+  
+  .pos-abs-top-right {
+    position: absolute;
+    top: -1.2em;
+  
+    right: 0;
+  }
+  
+  .box-shadow-none {
+    box-shadow: none;
+  }

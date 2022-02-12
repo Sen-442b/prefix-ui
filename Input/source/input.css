@@ -28,7 +28,7 @@
   all: unset;
   border-radius: var(--border-radius-custom);
   background-color: var(--grey-text-color);
-  padding: 0.5em;
+  padding: 0.3em;
   border-image: none;
   border-color: transparent;
   border-width: 0;
@@ -37,7 +37,7 @@
   color: inherit;
   font-style: inherit;
 
-  width: 100%;
+  width: 80%;
 }
 
 .form-input:focus {
@@ -82,9 +82,6 @@
   width: 40em;
 }
 
-.padding-sml {
-  padding: 0.5em;
-}
 
 .display-none {
   display: none;

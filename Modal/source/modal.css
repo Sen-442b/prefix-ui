@@ -1,0 +1,19 @@
+@import url("../../global.css");
+
+.modal-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--transparent-black-color);
+}
+
+.modal-content {
+  width: 30em;
+  background-color: var(--light-text-color);
+  border: var(--universal-border);
+  box-shadow: var(--box-shadow-dense);
+  border-radius: var(--border-radius-custom);
+  position: relative;
+}
