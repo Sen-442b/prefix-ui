@@ -79,30 +79,7 @@
   flex-grow: 1;
 }
 
-.curved-border {
-  border-radius: 0.5em 0.5em 0.5em 0.5em;
-}
 
-.curved-border-top {
-  border-radius: 0.5em 0.5em 0 0;
-}
-
-.curved-border-bottom {
-  border-radius: 0 0 0.5em 0.5em;
-}
-
-.flex-spc-arnd {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.flex-spc-btwn {
-  display: flex;
-  gap: 2em;
-  align-items: center;
-  justify-content: space-between;
-}
 
 .heading-text-decoration {
   text-decoration: underline overline var(--thin-text-color);
@@ -130,22 +107,6 @@
   border-radius: 0.2em;
 }
 
-.pos-abs-top-left {
-  position: absolute;
-  top: 1em;
-  left: 0;
-}
-
-.pos-abs-top-right {
-  position: absolute;
-  top: -1.2em;
-
-  right: 0;
-}
-
-.box-shadow-none {
-  box-shadow: none;
-}
 
 .overlay-fix {
   opacity: 0.7;
