@@ -2,7 +2,7 @@
 
 .nav-bar {
   width: 100%;
-  background-color: var(--light-text-color);
+  background-color: var(--primary-bg-color);
   border-radius: var(--border-radius-custom);
   box-shadow: var(--universal-box-shadow);
   min-height: 10vh;

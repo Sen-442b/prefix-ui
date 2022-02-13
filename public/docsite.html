@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/source/docsite.css" />
+    <script
+      src="https://kit.fontawesome.com/6f74bb313d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <button class="btn btn-outlined display-none" id="btn-nav-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <ul class="flex-gap-mdm">
+        <li class="nav-image-container">
+          <img
+            class="image-resp border-rad-20"
+            src="../assets/prefix (1).png"
+            alt="logo"
+          />
+        </li>
+      </ul>
+
+      <ul class="flex-spc-btwn">
+        <li><a href="#" class="cta-text-hover">Documentation</a></li>
+        <li><a href="#about" class="cta-text-hover">About</a></li>
+      </ul>
+      <ul class="flex-spc-btwn">
+        <li>
+          <a class="btn-icon"><i class="fab fa-github"></i></a>
+        </li>
+        <li>
+          <a class="btn-icon"><i class="fab fa-twitter"></i></a>
+        </li>
+      </ul>
+    </nav>
+
+
+
+    
+    <div class="doc-wrapper grid-col-2--20--80">
+      <aside class="padding-sml">
+        <ul class="doc-aside flex-column flex-spc-arnd doc-aside-nav">
+          <header class="fs-mdm heading-typopraphy">Components</header>
+
+          <li><a href="#alert">Alert</a></li>
+          <li><a href="#avatar">Avatar</a></li>
+          <li><a href="#badge">Badge</a></li>
+          <li><a href="#">Button</a></li>
+          <li><a href="#">Cards</a></li>
+          <li><a href="#">Image</a></li>
+          <li><a href="#">Input</a></li>
+          <li><a href="#">Modal</a></li>
+          <li><a href="#">Navigation</a></li>
+        </ul>
+      </aside>
+      <main class="doc-main">
+        <div id="alert">
+          <div class="content-intro">
+            <h3 class="heading-light fs-lrg">Alert</h3>
+            <h5>
+              Alerts are generally used to attract user attention
+            </h4>
+          </div>
+
+
+          <div class="content-showcase">
+            <p>
+              we have 5 different types of alert components Primary, Secondary,
+              Danger and Immediate action
+            </p>
+            <h4>Usage</h4>
+            <p>
+              Add the alert class with the required type of alert eg:<code
+                class="universal-box-shadow"
+              >
+                class="alert alert-primary"</code
+              >
+            </p>
+            <div class="component-display">
+              <div class="alert alert-primary">
+                This is a primary text in primary alert box with
+                <a class="alert-link-text" href="#">alert link</a>
+              </div>
+
+              <div class="alert alert-secondary">
+                This is a random text to show secondary alert box with
+                <a class="alert-link-text" href="#">alert link</a>
+              </div>
+              <div class="alert alert-danger">
+                <a href="#"><i class="fas fa-exclamation-circle"></i></a> This
+                is a danger text in danger alert box
+              </div>
+
+              <div class="alert alert-success">
+                <a href="#"><i class="fas fa-check-circle"></i></a> This is a
+                positive alert text in alert box
+              </div>
+
+              <div class="alert alert-immediate-action">
+                <a href="#"><i class="fas fa-radiation-alt"></i></a> This is a
+                Warning text in an alert box
+              </div>
+              <div class="alert alert-immediate-action alert-text">
+                <a href="#"><i class="fas fa-radiation-alt"></i></a> This is a text with
+                close button <button class="remove-alert-btn"></button>
+              </div>
+            </div>
+            <div class="code-demo">
+              <iframe
+                src="https://carbon.now.sh/embed/Y0KaQNQ4r0OOUTxgzHSR" 
+                class="text-align-center"
+                style="width: 100%; border: 0; transform: scale(1); overflow: hidden"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div id="avatar">
+
+            <div class="content-intro">
+              <h3 class="heading-light fs-lrg">Avatar</h3>
+              <h5>
+                Avatar can be used to show user's profile picture on card,navbar and in blogs as well.
+              </h5>
+            </div>
+            <div class="content-showcase">
+              <p>
+                we have circular avatar available in different sizes
+              </p>
+              <h4>Usage</h4>
+              <p>
+                Add the avatar class with the required size of avatar eg:<code
+                  class="universal-box-shadow"
+                >
+                  class="avatar avatar-mdm"</code
+                ><p>(mdm here stands for medium)</p>
+              </p>
+              <div class="component-display">
+                <div class="avatar-container">
+                    <img src="../avatar-and-badge/assets/dan-abramov.jpg" class="avatar avatar-lrg" alt="Dan Abramov">
+                    <img src="../avatar-and-badge/assets/dan-abramov.jpg" class="avatar avatar-mdm" alt="Dan Abramov">
+                    <img src="../avatar-and-badge/assets/dan-abramov.jpg" class="avatar avatar-sml" alt="Dan Abramov">
+                    <img src="../avatar-and-badge/assets/dan-abramov.jpg" class="avatar avatar-xsml" alt="Dan Abramov">
+               
+                    
+                </div>
+                
+              </div>
+              <div class="code-demo">
+                <iframe
+                  src="https://carbon.now.sh/embed/hvcYHaGBtodZhglwbyME" 
+                  class="text-align-center"
+                  style="width: 100%; border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+            </div>
+
+            <h3>Avatar Text</h3>
+            <h5>Text avatar can be used to show  the identity in textual manner</h5>
+            <div class="component-display">
+            <div class="avatar-container">
+                <div class="avatar avatar-lrg avatar-text "><p>Lorem ipsum dolor sit amet</p></div>
+                <div class="avatar avatar-mdm avatar-text"><p>Lorem ipsum dolor sit amet</p></div>
+                <div class="avatar avatar-sml avatar-text"><p>Lorem ipsum dolor sit amet</p></div>
+                <div class="avatar avatar-xsml avatar-text">Lorem ipsum</div>
+                
+            </div>
+            <div class="code-demo">
+                <iframe
+                  src="https://carbon.now.sh/embed/qv2Cif6CIvVPKlitybva" 
+                  class="text-align-center"
+                  style="width: 100%; border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+            </div>
+                  <h3>Avatar Overlay</h3>
+                  <h5>To show users social links, or info on hover <span class="card-subtitle">Note:-Use the avatar class and avatar size class on the image container</span></h5>
+                 <div class="avatar-container">
+                 <div class="avatar avatar-mdm avatar-wrapper" ><div class="overlay-wrapper"><a class="temp-cta-color" href="#"><i class="fab fa-twitter"></i></a></div><img class="" src="../avatar-and-badge/assets/dan-abramov.jpg"  alt="Dan Abramov"></div>
+
+                    <div class="avatar avatar-mdm avatar-wrapper" ><div class="overlay-wrapper"><p>Dan Abramov</p></div><img src="../avatar-and-badge/assets/dan-abramov.jpg"  alt="Dan Abramov"></div>
+                </div >
+                <div class="code-demo">
+                    <iframe
+                     src="https://carbon.now.sh/embed/qv2Cif6CIvVPKlitybva" 
+                     class="text-align-center"
+                     style="width: 100%; border: 0; transform: scale(1); overflow: hidden"
+                     sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div></div>
+
+
+            </div>
+          </div>
+
+    <div id="badge">
+        <div class="content-intro">
+            <h3 class="heading-light fs-lrg">Badge</h3>
+            <h5>
+              Badges are used to show status and new notifications
+            </h4>
+          </div>
+
+          <div class="content-showcase">
+            <p> We have two types of badge components, notification and status badge
+              </p>
+              <h4>Usage</h4>
+              <p>
+                Add the badge class with the required type of badge eg:
+                <code class="universal-box-shadow">
+                  class="badge badge-status badge-status-online"<br>
+                  class="badge badge-notification"
+                </code>
+              </p>
+              <div class="content-display">
+                <div class="avatar-container">
+                    <div class="avatar avatar-lrg avatar-wrapper">
+                       <img src="../avatar-and-badge/assets/dan-abramov.jpg"  alt="Dan Abramov">
+                       <div class="badge badge-status badge-status-online"></div>
+                    </div>
+                    <div class="avatar avatar-mdm avatar-wrapper">
+                       <img src="../avatar-and-badge/assets/dan-abramov.jpg"  alt="Dan Abramov">
+                       <div class="badge badge-status badge-status-dnd"></div>
+                    </div>
+                    <div class="avatar avatar-sml avatar-wrapper">
+                       <img src="../avatar-and-badge/assets/dan-abramov.jpg"  alt="Dan Abramov">
+                       <div class="badge badge-status badge-status-offline"></div>
+                    </div>
+                    <span class="icon-wrapper"><i class="fas fa-bell"></i><span class="badge badge-notification ">99</span>
+                 </div>
+              </div>
+              <div class="code-demo">
+                <iframe
+                  src="https://carbon.now.sh/embed/myqDSsBc276irtWY0Exy" 
+                  class="text-align-center"
+                  style="width: 100%; border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+            </div>
+
+
+          </div>
+
+
+    </div>
+    <div id=""></div>
+
+      </main>
+    </div>
+  </body>
+</html>

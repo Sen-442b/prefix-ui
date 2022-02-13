@@ -41,7 +41,7 @@ body {
 
 .alert-immediate-action {
   background-color: var(--alert-immediate-action-bg-color);
-  color: var(----alert-immediate-action-txt-color);
+  color: var(--alert-immediate-action-txt-color);
 }
 
 .material-icons {
