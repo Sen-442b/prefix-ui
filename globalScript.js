@@ -7,8 +7,5 @@ function includeModule(filePath){
 }
 
 
-includeModule("https://cdn.jsdelivr.net/gh/sen-442b/nameless-component-library@latest/Input/source/main.js");
-// includeModule("./Components//Avatar-Badge/source/main.js");
-// includeModule("./Components/Alert-Button/source/main.js");
-// includeModule("./Components/Input/source/main.js");
-// includeModule("./Components/Navigation/source/main.js");
+includeModule("https://cdn.jsdelivr.net/gh/sen-442b/nameless-component-library@latest/Components/Input/source/main.js");
+ includeModule("https://cdn.jsdelivr.net/gh/sen-442b/nameless-component-library@latest/Components/Modal/source/main.js");
