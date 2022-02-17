@@ -1,4 +1,4 @@
-@import url("../../global.css");
+@import url("../../../global.css");
 
 .form {
   background-color: var(--primary-text-color);
@@ -82,15 +82,6 @@
   width: 40em;
 }
 
-
-.display-none {
-  display: none;
-}
-
-.display-block {
-  display: block;
-}
-
 .form-input-danger {
   outline: 3px solid var(--danger-text-color);
 }
@@ -103,5 +94,5 @@
 }
 
 .form-input-success:focus {
-  outline-color:var(--alert-success-bg-color);
+  outline-color: var(--alert-success-bg-color);
 }

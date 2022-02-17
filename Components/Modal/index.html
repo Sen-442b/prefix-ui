@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="source/modal.css" />
+    <link rel="stylesheet" href="./source/modal.css" />
     <script
       src="https://kit.fontawesome.com/6f74bb313d.js"
       crossorigin="anonymous"
@@ -14,10 +14,11 @@
 
   <body>
       
-    <div class="modal-container flex-center">
+    <button class="btn btn-cta" id="btn-open-modal">Open Modal</button>
+    <div class="modal-container flex-center display-none" id="modal-container-js">
 
       <div class="modal-content padding-mdm">
-        <button class="btn btn-outlined btn-sml pos-abs-top-right  box-shadow-none red-text-color">Close</button>
+        <button class="btn btn-outlined btn-sml pos-abs-top-right  box-shadow-none red-text-color" id="btn-close-modal">Close</button>
         <h3 class="headline-typography text-align-center">Login</h3>
         <div class="flex-spc-btwn">
           <button
@@ -69,7 +70,8 @@
           <button class="btn btn-cta">Login</button>
         </form>
       </div>
-      <h3></h3>
+    
     </div>
   </body>
+  <script src="./source/main.js"></script>
 </html>
