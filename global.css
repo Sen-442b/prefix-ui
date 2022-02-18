@@ -7,6 +7,7 @@
 @import url("./Components/Input/source/input.css");
 @import url("./Components/Modal/source/modal.css");
 @import url("./Components/Navigation/source/navigation.css");
+@import url("./Components/Grid/source/grid.css");
 :root {
   /*Alert and Button */
   --primary-alert-background-color: #93c5fd;
@@ -51,7 +52,6 @@
 
 html {
   box-sizing: border-box;
-  
 }
 *,
 *:before,
@@ -86,12 +86,11 @@ a {
   gap: 0.5em;
 }
 
-.flex-gap-lrg{
+.flex-gap-lrg {
   display: flex;
   align-items: center;
 
   gap: 2.5em;
-
 }
 
 .gap-mdm {
@@ -114,40 +113,6 @@ a {
   gap: 2em;
   align-items: center;
   justify-content: space-between;
-}
-
-.grid-center {
-  display: grid;
-  place-items: center;
-}
-
-.grid-col-4 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0.2em;
-}
-
-
-
-.grid-col-2--50--50 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.grid-col-2--20--80 {
-  display: grid;
-  grid-template-columns: 20% 1fr;
-}
-
-.grid-col-1 {
-  grid-template-columns: 1fr;
-}
-
-@media  screen and (max-width:767px) {
-.grid-col-2--20--80{
-    grid-template-columns:1fr;
-  }
-  
-  
 }
 
 .text-align-center {
@@ -173,7 +138,16 @@ a {
   padding: 1em;
 }
 .padding-lrg {
-  padding: 1.5;
+  padding: 1.5em;
+}
+.margin-sml {
+  margin: 0.5em;
+}
+.margin-mdm {
+  margin: 1em;
+}
+.margin-lrg {
+  margin: 1.5em;
 }
 
 .fs-mdm {
@@ -189,7 +163,7 @@ a {
 }
 
 .curved-border {
-  border-radius: 0.5em 0.5em 0.5em 0.5em;
+  border-radius: 0.5em;
 }
 
 .curved-border-top {
@@ -219,8 +193,6 @@ a {
   background-color: var(--dark-text-color);
   color: var(--light-text-color);
 }
-
-
 
 .pos-abs-center {
   position: absolute;
@@ -255,8 +227,8 @@ a {
 .box-shadow-none {
   box-shadow: none;
 }
-.box-shadow-uni{
-  box-shadow:var(--universal-box-shadow);
+.box-shadow-uni {
+  box-shadow: var(--universal-box-shadow);
 }
 
 .cta-text-hover:hover {
@@ -270,7 +242,6 @@ a {
 .universal-box-shadow {
   box-shadow: var(--universal-box-shadow);
 }
-
 
 .display-none {
   display: none;
