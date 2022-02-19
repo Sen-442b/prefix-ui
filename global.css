@@ -8,6 +8,7 @@
 @import url("./Components/Modal/source/modal.css");
 @import url("./Components/Navigation/source/navigation.css");
 @import url("./Components/Grid/source/grid.css");
+@import url("./Components/Slider/source/slider.css");
 :root {
   /*Alert and Button */
   --primary-alert-background-color: #93c5fd;
