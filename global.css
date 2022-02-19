@@ -68,6 +68,11 @@ button {
 a {
   cursor: pointer;
 }
+
+.border-rad-none{
+  border-radius: 0;
+}
+
 .border-radius-100 {
   border-radius: 100%;
 }
@@ -130,6 +135,14 @@ a {
   font-weight: 600;
   font-size: larger;
 }
+.heading-strong{
+  font-weight: 900;
+  font-size:larger;
+}
+.strike{
+  text-decoration: line-through;
+  text-decoration-color: var(--cta-background-color);
+}
 
 .padding-sml {
   padding: 0.5em;
@@ -174,6 +187,18 @@ a {
   border-radius: 0 0 0.5em 0.5em;
 }
 
+
+.light-txt{
+  color:var(--light-text-color)
+}
+
+.red-txt{
+  color: var(--red-variant);
+  
+}
+
+
+
 .light-txt-dark-bg {
   color: var(--light-text-color);
   background-color: var(--dark-text-color);
@@ -193,6 +218,11 @@ a {
   background-color: var(--dark-text-color);
   color: var(--light-text-color);
 }
+
+.pos-rel{
+  position:relative;
+}
+
 
 .pos-abs-center {
   position: absolute;
@@ -233,6 +263,10 @@ a {
 
 .cta-text-hover:hover {
   color: var(--cta-background-color);
+}
+
+.margin-none{
+  margin:0;
 }
 
 .margin-top-sml {
