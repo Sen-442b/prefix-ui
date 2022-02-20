@@ -262,6 +262,11 @@ a {
   box-shadow: var(--universal-box-shadow);
 }
 
+
+.cta-text{
+  color:var(--cta-background-color);
+}
+
 .cta-text-hover:hover {
   color: var(--cta-background-color);
 }

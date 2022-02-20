@@ -37,6 +37,7 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 .grid-col-1 {
+  display:grid;
   grid-template-columns: 1fr;
 }
 
