@@ -102,6 +102,9 @@ a {
 .gap-mdm {
   gap: 0.5em;
 }
+.gap-lrg {
+  gap: 1.5em;
+}
 
 .flex-center {
   display: flex;
