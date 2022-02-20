@@ -331,3 +331,7 @@ a {
 .opacity-mdm {
   opacity: 0.6;
 }
+
+.width-100 {
+  width: 100%;
+}
