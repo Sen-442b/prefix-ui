@@ -1,5 +1,3 @@
-![prefix logo](./assets/prefix (1).png)
-
 # PREFIX
 
 ### Alway before your content
