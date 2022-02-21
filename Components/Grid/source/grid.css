@@ -37,12 +37,16 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 .grid-col-1 {
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr;
 }
 
 @media screen and (max-width: 767px) {
-  .grid-col-2--20--80 {
+  .mob-grid-col-1 {
     grid-template-columns: 1fr;
+  }
+
+  .mob-grid-col-2--50-50 {
+    grid-template-columns: (2, 50fr);
   }
 }

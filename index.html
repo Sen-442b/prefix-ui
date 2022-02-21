@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0ea5e9" />
     <title>Prefix</title>
-    <link rel="icon" type="image/x-icon" href="./assets/prefix (1).png">
+    <link rel="icon" type="image/x-icon" href="./assets/prefix (1).png" />
     <link rel="stylesheet" href="/source/docsite.css" />
+    <link rel="stylesheet" href="./global.css" />
     <script
       src="https://kit.fontawesome.com/6f74bb313d.js"
       crossorigin="anonymous"
     ></script>
-    <script defer src="https://cdn.jsdelivr.net/gh/sen-442b/prefix-ui@latest/globalScript.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/gh/sen-442b/prefix-ui@latest/globalScript.js"
+    ></script>
   </head>
   <body>
     <nav class="nav-bar">
@@ -31,12 +35,16 @@
       </ul>
 
       <ul class="flex-spc-btwn">
-        <li><a href="#" class="cta-text-hover">Documentation</a></li>
+        <li>
+          <a href="public/docsite.html" class="cta-text-hover">Documentation</a>
+        </li>
         <li><a href="#about" class="cta-text-hover">About</a></li>
       </ul>
       <ul class="flex-spc-btwn">
         <li>
-          <a class="btn-icon"><i class="fab fa-github"></i></a>
+          <a class="btn-icon" href="https://github.com/Sen-442b/prefix-ui"
+            ><i class="fab fa-github"></i
+          ></a>
         </li>
         <li>
           <a class="btn-icon"><i class="fab fa-twitter"></i></a>
@@ -47,16 +55,50 @@
     <main class="main-content flex-column flex-center">
       <section class="main-content-info flex-column flex-center">
         <h3 class="headline-typography fs-xlrg">Prefix</h3>
-        <p>Always Before your Markup</p>
+        <p>Always Before your Content</p>
         <div class="flex-gap-mdm">
           <button class="btn btn-cta btn-cta-anim">
             <a href="public/docsite.html"> Get Started </a>
           </button>
-          <button class="btn btn-outlined">Documentation</button>
+          <button class="btn btn-outlined">
+            <a href="#installation">Installation</a>
+          </button>
         </div>
       </section>
 
-      <section id="about">
+      <section id="#installation" class="grid-col-2--50-50 mob-grid-col-1">
+        <div class="flex-column flex-center">
+          <h4 class="about fs-lrg">Installation</h4>
+          <p class="text-align-center fs-mdm">
+            Copy and paste the code snippet inside the
+            <code class="box-shadow-uni">&lt head &gt</code> tag of your html
+          </p>
+        </div>
+        <div class="flex-center">
+          <iframe
+            src="https://carbon.now.sh/embed/DOJYVOWSSxjRxy11Afjp"
+            class="text-align-center"
+            style="
+              width: 100%;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+      </section>
+
+      <section id="about" class="grid-col-2--50-50 mob-grid-col-1">
+        <div class="flex-column flex-center">
+          <h4 class="about fs-lrg">About</h4>
+          <p class="text-align-center fs-mdm">
+            Prefix is a lightweight CSS component library and utility based
+            framework for developers to seamlessly create interfaces.
+          </p>
+        </div>
+
         <img
           class="image-resp"
           src="/assets/prefix (1).png"
