@@ -30,4 +30,4 @@ Copy and paste this code snipet inside the `<head>` tag of you document
 - Modal
 - Navigation
 
-Checkout the [Documentation](https://prefix-ui.netlify.app/oublic/docsite.html) for more info
+Checkout the [Documentation](https://prefix-ui.netlify.app/public/docsite.html) for more info
