@@ -13,7 +13,6 @@
   box-shadow: var(--universal-box-shadow);
 }
 
-
 .card-btns {
   display: flex;
   justify-content: space-around;
@@ -82,8 +81,6 @@
   flex-grow: 1;
 }
 
-
-
 .heading-text-decoration {
   text-decoration: underline overline var(--thin-text-color);
 }
@@ -110,11 +107,9 @@
   border-radius: 0.2em;
 }
 
-.card-info{
+.card-info {
   background-color: var(--light-text-color);
-
 }
-
 
 .overlay-fix {
   opacity: 0.7;
@@ -154,10 +149,8 @@
   place-items: center;
 }
 
-
-@media screen and (max-width:757px) {
-  .card-showcase{
-    flex-basis:20%;
+@media screen and (max-width: 757px) {
+  .card-showcase {
+    flex-basis: 20%;
   }
-  
 }
