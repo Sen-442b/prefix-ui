@@ -25,10 +25,9 @@ body {
 .btn:hover {
   filter: brightness(var(--hover-brightness));
 }
-.btn-wide{
-  width:100%;
+.btn-wide {
+  width: 100%;
 }
-
 
 .btn-cta {
   background-color: var(--cta-background-color);
