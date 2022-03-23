@@ -7,7 +7,7 @@
   align-items: center;
   background-color: rgb(230, 239, 245);
   flex-wrap: wrap;
-  width: auto;
+  width: 100%;
 
   margin: 3rem 0;
 }
@@ -21,28 +21,28 @@
 }
 
 .avatar-lrg {
-  width: 10em;
-  height: 10em;
+  width: 10rem;
+  height: 10rem;
   font-size: 2rem;
 }
 
 .avatar-mdm {
-  width: 7em;
-  height: 7em;
+  width: 7rem;
+  height: 7rem;
 
-  font-size: 1.4em;
+  font-size: 1.4rem;
 }
 
 .avatar-sml {
-  width: 4.9em;
-  height: 4.9em;
-  font-size: 0.98em;
+  width: 4.9rem;
+  height: 4.9rem;
+  font-size: 0.98rem;
 }
 
 .avatar-xsml {
-  width: 3em;
-  height: 3em;
-  font-size: 0.6em;
+  width: 3rem;
+  height: 3rem;
+  font-size: 0.6rem;
 }
 
 .avatar-text {
@@ -104,4 +104,58 @@
 
 .avatar-wrapper:hover .overlay-wrapper {
   opacity: 0.6;
+}
+
+@media screen and (max-width: 767px) {
+  .tab-avatar-lrg {
+    width: 10rem;
+    height: 10rem;
+    font-size: 2rem;
+  }
+
+  .tab-avatar-mdm {
+    width: 7rem;
+    height: 7rem;
+
+    font-size: 1.4rem;
+  }
+
+  .tab-avatar-sml {
+    width: 4.9rem;
+    height: 4.9rem;
+    font-size: 0.98rem;
+  }
+
+  .tab-avatar-xsml {
+    width: 3rem;
+    height: 3rem;
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mob-avatar-lrg {
+    width: 10rem;
+    height: 10rem;
+    font-size: 2rem;
+  }
+
+  .mob-avatar-mdm {
+    width: 7rem;
+    height: 7rem;
+
+    font-size: 1.4rem;
+  }
+
+  .mob-avatar-sml {
+    width: 4.9rem;
+    height: 4.9rem;
+    font-size: 0.98rem;
+  }
+
+  .mob-avatar-xsml {
+    width: 3rem;
+    height: 3rem;
+    font-size: 0.6rem;
+  }
 }

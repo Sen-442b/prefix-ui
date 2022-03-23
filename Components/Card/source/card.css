@@ -8,7 +8,6 @@
   padding: 1em;
   background-color: var(--background-theme);
   display: flex;
-  flex-wrap: wrap;
 
   box-shadow: var(--universal-box-shadow);
 }
@@ -21,10 +20,6 @@
   flex-basis: 3rem;
 }
 .card-showcase {
-  flex-basis: 40%;
-
-  display: flex;
-  flex-direction: column;
   box-shadow: var(--universal-box-shadow);
 }
 
@@ -150,7 +145,16 @@
 }
 
 @media screen and (max-width: 757px) {
+  .card-container {
+    width: 100%;
+  }
   .card-showcase {
-    flex-basis: 20%;
+    flex-basis: 76%;
+  }
+}
+
+@media screen and (max-width: 482px) {
+  .fi-btn-container {
+    flex-wrap: wrap;
   }
 }

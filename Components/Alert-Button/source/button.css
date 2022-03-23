@@ -49,20 +49,28 @@ body {
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
+.btn-cta-anim:hover:after {
+  content: "->";
+  animation: none;
+}
 
+/* Feat on progress
 .btn-cta:hover::after {
   animation: none;
   content: " ->";
 }
+*/
 
 .btn-outlined {
   background-color: var(--light-text-color);
+  outline: 1px solid var(--dark-text-color);
 }
 
 .btn-outlined:hover {
   background-color: var(--light-text-color);
   color: var(--cta-background-color);
   box-shadow: var(--outline-box-shadow);
+  outline-color: var(--cta-background-color);
 }
 
 .btn-lrg {
