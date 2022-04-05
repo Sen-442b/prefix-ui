@@ -9,6 +9,8 @@
 @import url("./Components/Navigation/source/navigation.css");
 @import url("./Components/Grid/source/grid.css");
 @import url("./Components/Slider/source/slider.css");
+@import url("./Components/Text-Utils/source/text-utils.css");
+@import url("./Components/List/source/list.css");
 :root {
   /*Alert and Button */
   --primary-alert-background-color: #93c5fd;
@@ -181,6 +183,12 @@ a {
   margin: 1.5em;
 }
 
+.fs-xsml {
+  font-size: 0.5em;
+}
+.fs-sml {
+  font-size: 0.8em;
+}
 .fs-mdm {
   font-size: 1.5em;
 }
@@ -393,4 +401,13 @@ a {
   .fs-lrg {
     font-size: 2.5em;
   }
+}
+
+.ol-custom {
+  list-style: none;
+  counter-reset: li;
+}
+
+li {
+  counter-increment: li;
 }

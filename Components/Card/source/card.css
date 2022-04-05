@@ -88,10 +88,6 @@
   font-size: 2em;
 }
 
-.fs-sml {
-  font-size: 0.8em;
-}
-
 .text-badge {
   padding: 0.2em;
   background-color: var(--cta-background-color);
