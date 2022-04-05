@@ -288,6 +288,9 @@ a {
 .overflow-y-scroll {
   overflow-y: scroll;
 }
+.cta-text {
+  color: var(--cta-background-color);
+}
 
 .cta-text-hover:hover {
   color: var(--cta-background-color);
