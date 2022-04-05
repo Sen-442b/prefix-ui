@@ -17,37 +17,77 @@
       defer
       src="https://cdn.jsdelivr.net/gh/sen-442b/prefix-ui@latest/globalScript.js"
     ></script>
+   
   </head>
   <body>
     <nav class="nav-bar">
-      <button class="btn btn-outlined display-none" id="btn-nav-toggle">
+      <div class=" mob-nav-items padding-mdm display-none" id="ind-nav">
+        <div><button class="red-text-color border-radius-100" id="btn-close-ind-nav"><i class="fas fa-times-circle"></i>
+        </button></div>
+        <ul class="  flex-center gap-lrg flex-column">
+        <li class="dark-txt-light-bg padding-sml ">
+          <a href="./public/docsite.html">Documentation</a>
+          
+        </li>
+        <li class="dark-txt-light-bg padding-sml ">
+          <a href="#about">About</a>
+          
+        </li>
+      </ul>
+
+      </div>
+
+
+      </div>
+      <button class="btn pc-tab-display-none" id="btn-open-ind-nav">
         <i class="fas fa-bars"></i>
       </button>
-
       <ul class="flex-gap-mdm">
         <li class="nav-image-container">
-          <img
+          <a href="../index.html" title="Home"><img
             class="image-resp border-rad-20"
-            src="./assets/prefix (1).png"
+            src="/assets/prefix (1).png"
             alt="logo"
+          />
+        </a>
+        </li>
+        <li>
+          <input
+            type="search"
+            name=""
+            class="form-input fluid-width"
+            placeholder="Search"
+            id=""
           />
         </li>
       </ul>
-
-      <ul class="flex-spc-btwn">
+      <ul class="flex-spc-btwn mob-display-none">
         <li>
-          <a href="public/docsite.html" class="cta-text-hover">Documentation</a>
+          <a href="./public/docsite.html" class="cta-text-hover"
+            >Documentation</a
+          >
         </li>
+
         <li><a href="#about" class="cta-text-hover">About</a></li>
       </ul>
       <ul class="flex-spc-btwn">
-        <li>
-          <a class="btn-icon" href="https://github.com/Sen-442b/prefix-ui"
-            ><i class="fab fa-github"></i
+        <li title="GitHub">
+          <a
+            class="btn-icon alert-text"
+            href="https://github.com/Sen-442b/prefix-ui"
+            target="_blank"
+            rel="noopener noreferrer nofollow" 
+            ><i class="fa fa-github"></i
           ></a>
         </li>
-        <li>
-          <a class="btn-icon"><i class="fab fa-twitter"></i></a>
+        <li title="Twitter">
+          <a
+            class="btn-icon alert-text"
+            href="https://twitter.com/sen_shubhendu"
+            target="_blank"
+            rel="noopener noreferrer nofollow" 
+            ><i class="fa fa-twitter"></i
+          ></a>
         </li>
       </ul>
     </nav>
@@ -55,7 +95,7 @@
     <main class="main-content flex-column flex-center">
       <section class="main-content-info flex-column flex-center">
         <h3 class="headline-typography fs-xlrg">Prefix</h3>
-        <p>Always Before your Content</p>
+        <p>Design beautiful and customizable user interfaces in no time </p>
         <div class="flex-gap-mdm">
           <button class="btn btn-cta btn-cta-anim">
             <a href="public/docsite.html"> Get Started </a>
@@ -107,4 +147,5 @@
       </section>
     </main>
   </body>
+  
 </html>

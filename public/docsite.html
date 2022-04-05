@@ -31,54 +31,100 @@
       src="https://kit.fontawesome.com/6f74bb313d.js"
       crossorigin="anonymous"
     ></script>
+    <script defer src="../source/docsite.js"></script>
   </head>
   <body>
     <nav class="nav-bar">
-      <button class="btn btn-outlined display-none" id="btn-nav-toggle">
+      <div class=" mob-nav-items padding-mdm display-none" id="doc-nav">
+        <div><button class="red-text-color border-radius-100" id="btn-close-doc-nav"><i class="fas fa-times-circle"></i>
+        </button></div>
+        <ul class="  flex-center gap-lrg flex-column">
+        <li class="dark-txt-light-bg padding-sml ">
+          <a href="../index.html#installation"
+          >Installation</a>
+          
+        </li>
+        <li class="dark-txt-light-bg padding-sml ">
+          <a href="../index.html#about">About</a>
+          
+        </li>
+      </ul>
+
+      </div>
+
+
+      </div>
+      <button class="btn pc-tab-display-none" id="btn-open-doc-nav">
         <i class="fas fa-bars"></i>
       </button>
       <ul class="flex-gap-mdm">
         <li class="nav-image-container">
-          <a href="https://prefix-ui.netlify.app">
-            <img
-              class="image-resp border-rad-20"
-              src="../assets/prefix (1).png"
-              alt="logo"
-            />
-          </a>
+          <a href="../index.html" title="Home"><img
+            class="image-resp border-rad-20"
+            src="/assets/prefix (1).png"
+            alt="logo"
+          />
+        </a>
+        </li>
+        <li>
+          <input
+            type="search"
+            name=""
+            class="form-input fluid-width"
+            placeholder="Search"
+            id=""
+          />
         </li>
       </ul>
-      <ul class="flex-spc-btwn">
+      <ul class="flex-spc-btwn mob-display-none">
         <li>
-          <a
-            href="https://prefix-ui.netlify.app/index.html#installation"
-            class="cta-text-hover"
+          <a href="../index.html#installation" class="cta-text-hover"
+          target="_blank"
+          rel="noopener noreferrer nofollow" 
             >Installation</a
           >
         </li>
-        <li>
-          <a
-            href="https://prefix-ui.netlify.app/index.html#about"
-            class="cta-text-hover"
-            >About</a
-          >
-        </li>
+
+        <li><a href="../index.html#about" class="cta-text-hover"   target="_blank"
+          rel="noopener noreferrer nofollow" >About</a></li>
       </ul>
       <ul class="flex-spc-btwn">
-        <li>
-          <a class="btn-icon" href="https://github.com/Sen-442b/prefix-ui"
-            ><i class="fab fa-github"></i
+        <li title="GitHub">
+          <a
+            class="btn-icon alert-text"
+            href="https://github.com/Sen-442b/prefix-ui"
+            target="_blank"
+            rel="noopener noreferrer nofollow" 
+            ><i class="fa fa-github"></i
+  
           ></a>
         </li>
-        <li>
-          <a class="btn-icon"><i class="fab fa-twitter"></i></a>
+        <li title="Twitter">
+          <a
+            class="btn-icon alert-text"
+            href="https://twitter.com/sen_shubhendu"
+            target="_blank"
+            rel="noopener noreferrer nofollow" 
+            ><i class="fa fa-twitter"></i
+          ></a>
         </li>
       </ul>
     </nav>
     <div class="doc-wrapper grid-col-2--20-80 mob-grid-col-1">
       <aside class="padding-sml">
-        <ul class="doc-aside flex-column flex-spc-arnd doc-aside-nav">
-          <header class="fs-mdm heading-typopraphy">Components</header>
+        <header class="flex-spc-btwn">
+          <h2 class="text-align-center fs-mdm heading-typopraphy">
+            Components
+          </h2>
+
+          <button class="pc-tab-display-none btn" id="toggle-component-list">
+            ↓
+          </button>
+        </header>
+        <ul
+          class="doc-aside flex-column flex-spc-arnd doc-aside-nav mob-display-none"
+          id="component-list"
+        >
           <li><a href="#alert" class="cta-text-hover">Alert</a></li>
           <li><a href="#avatar" class="cta-text-hover">Avatar</a></li>
           <li><a href="#badge" class="cta-text-hover">Badge</a></li>
@@ -131,15 +177,16 @@
                 <a href="#"><i class="fas fa-radiation-alt"></i></a> This is a
                 Warning text in an alert box
               </div>
-              <div class="alert alert-immediate-action">
-                <a href="#"><i class="fas fa-radiation-alt"></i></a> This is a
+              <div class="alert alert-immediate-action flex-spc-btwn">
+                <div><a href="#"><i class="fas fa-radiation-alt"></i></a> This is a
                 text with close button
-                <button class="remove-alert-btn"></button>
+              </div>
+                <button class=""><i class="fas fa-times-circle"></i></button>
               </div>
             </div>
             <div class="code-demo">
               <iframe
-                src="https://carbon.now.sh/embed/Y0KaQNQ4r0OOUTxgzHSR"
+                src="https://carbon.now.sh/embed/QFGPoyxDqYoyA3OmjcLz"
                 class="text-align-center"
                 style="
                   width: 100%;
@@ -533,7 +580,7 @@
                       />
                       <div class="overlay-wrapper curved-border-top fs-lrg">
                         <a href="#" class="btn-icon-outlined"
-                          ><i class="fas fa-play"></i
+                          ><i class="fas fa-play" aria-hidden="true"></i
                         ></a>
                       </div>
                     </div>
@@ -542,17 +589,17 @@
                     >
                       <button>
                         <span class="btn-icon-outlined"
-                          ><i class="fas fa-heart"></i
+                          ><i class="fas fa-heart" aria-hidden="true"></i
                         ></span>
                       </button>
                       <button>
                         <span class="btn-icon-outlined"
-                          ><i class="fas fa-bookmark"></i
+                          ><i class="fas fa-bookmark" aria-hidden="true"></i
                         ></span>
                       </button>
                       <button>
                         <span class="btn-icon-outlined"
-                          ><i class="fas fa-share"></i
+                          ><i class="fas fa-share" aria-hidden="true"></i
                         ></span>
                       </button>
                     </div>
@@ -564,14 +611,15 @@
                     <h3 class="card-subtitle">By Quincy Larson</h3>
                     <div class="rating">
                       <span class="rating-positive"
-                        ><i class="fas fa-star"></i></span
+                        ><i class="fas fa-star" aria-hidden="true"></i></span
                       ><span class="rating-positive"
-                        ><i class="fas fa-star"></i></span
+                        ><i class="fas fa-star" aria-hidden="true"></i></span
                       ><span class="rating-positive"
-                        ><i class="fas fa-star"></i></span
+                        ><i class="fas fa-star" aria-hidden="true"></i></span
                       ><span class="rating-positive"
-                        ><i class="fas fa-star"></i></span
-                      ><span><i class="fas fa-star"></i></span
+                        ><i class="fas fa-star" aria-hidden="true"></i></span
+                      ><span
+                        ><i class="fas fa-star" aria-hidden="true"></i></span
                       ><span class="fs-sml card-subtitle">4.0(300)</span>
                     </div>
                     <div class="fi-btn-container flex-spc-btwn">
@@ -584,6 +632,7 @@
                 </div>
               </div>
             </div>
+
             <div class="code-demo">
               <iframe
                 src="https://carbon.now.sh/embed/7lgyRTBOvHDQatfHvwWD"
@@ -684,11 +733,11 @@
                     alt="free code camp responsive art"
                   />
                   <div
-                    class="card-info hover-to-display pos-abs-bottom flex-f-start"
+                    class="card-info hover-to-display pos-abs-bottom flex-f-start mob-max-height-100 mob-flex-column"
                   >
                     <img
                       src="../Components/Card/assets/quincyLarson.jpg"
-                      class="avatar avatar-mdm"
+                      class="avatar avatar-mdm mob-avatar-xsml"
                       alt="Quincy Larson"
                     />
                     <div class="text-align-left">
@@ -721,8 +770,8 @@
             </div>
             <h4 class="fs-mdm">Card With Badge</h4>
             <div class="component-display">
-              <div class="avatar-container">
-                <div class="card-container curved-border">
+              <div class="avatar-component">
+                <div class="card-container curved-border flex-spc-arnd gap-mdm">
                   <div class="card-showcase curved-border">
                     <div class="image-container">
                       <img
@@ -730,6 +779,12 @@
                         src="../Components/Card/assets/quincyLarson.jpg"
                         alt="Quincy Larson"
                       />
+                      <div class="overlay-wrapper curved-border-top fs-lrg">
+                        <a href="#" class="btn-icon-outlined"
+                          ><i class="fas fa-play"></i
+                        ></a>
+                      </div>
+
                       <div class="overlay-wrapper curved-border-top fs-lrg">
                         <a href="#" class="btn-icon-outlined"
                           ><i class="fas fa-play"></i
@@ -759,8 +814,8 @@
                       </button>
                     </div>
                   </div>
-                  <div class="card-content">
-                    <h2 class="headline-typography heading-text-decoration">
+                  <div class="flex-column text-align-center">
+                    <h2 class="headline-typography">
                       Getting Started With CSS
                     </h2>
                     <h3 class="card-subtitle">By Quincy Larson</h3>
@@ -786,6 +841,7 @@
                 </div>
               </div>
             </div>
+
             <div class="code-demo">
               <iframe
                 src="https://carbon.now.sh/embed/YvUFTsFCp4K9xeQdGglT"
@@ -1356,7 +1412,7 @@
                       aria-required="true"
                       autocomplete="off"
                       type="email"
-                      placeholder="beaucarnes123@gmail.com"
+                      placeholder="kentcdodds123@gmail.com"
                     />
                     <small
                       class="alert alert-danger fs-sml padding-sml display-none"
@@ -1449,7 +1505,7 @@
                     <label for="comments">Comments</label>
                     <textarea
                       name="comments"
-                      class="form-textarea txtarea-mdm"
+                      class="form-textarea txtarea-mdm tab-txtarea-resp"
                     ></textarea>
                   </div>
                   <input
@@ -1496,7 +1552,7 @@
                   Open Modal
                 </button>
                 <div
-                  class="modal-container flex-center display-none"
+                  class="modal-container flex-center text-align-center display-none"
                   id="modal-container-js"
                 >
                   <div class="modal-content padding-mdm">
@@ -1530,7 +1586,7 @@
                     <h4 class="text-align-center">Or</h4>
                     <form action="#">
                       <div class="form-field">
-                        <label for="email-input" class="input-lbl"
+                        <label for="email-input" class="input-lbl "
                           >Email
                         </label>
                         <input
@@ -1580,7 +1636,7 @@
           </div>
         </div>
         <div id="navigation">
-          <div class="contenr-intro">
+          <div class="content-intro">
             <h3 class="fs-lrg">Navigation</h3>
             <h5>
               Navigation bar is used to navigate to different pages of a web app
@@ -1592,10 +1648,7 @@
             <div class="component-display">
               <div class="avatar-container">
                 <nav class="nav-bar">
-                  <button
-                    class="btn btn-outlined display-none"
-                    id="btn-nav-toggle"
-                  >
+                  <button class="btn pc-tab-display-none" id="btn-nav-toggle">
                     <i class="fas fa-bars"></i>
                   </button>
                   <ul class="flex-gap-mdm">
@@ -1616,14 +1669,16 @@
                       />
                     </li>
                   </ul>
-                  <ul class="flex-spc-btwn">
+                  <ul class="flex-spc-btwn mob-display-none">
                     <li><a href="#" class="cta-text-hover">Explore</a></li>
                     <li><a href="#" class="cta-text-hover">Pricing</a></li>
                     <li><a href="#" class="cta-text-hover">Partners</a></li>
                   </ul>
                   <ul class="flex-spc-btwn">
                     <li>
-                      <a href="#" class="icon-wrapper icon-wrapper-sml"
+                      <a
+                        href="#"
+                        class="icon-wrapper icon-wrapper-sml mob-display-none"
                         ><i class="fas fa-bell"></i
                         ><span class="badge badge-notification"></span
                       ></a>
@@ -1633,7 +1688,7 @@
                         ><i class="fas fa-shopping-cart"></i
                       ></a>
                     </li>
-                    <li>
+                    <li class="mob-display-none">
                       <img
                         src="../Components/Avatar-Badge/assets/dan-abramov.jpg"
                         class="avatar avatar-xsml"
