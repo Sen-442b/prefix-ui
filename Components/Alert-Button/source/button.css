@@ -101,14 +101,14 @@ body {
 }
 
 .btn:disabled {
-  pointer-events: none;
-
   background-color: rgba(128, 128, 128, 0.514);
   opacity: 0.5;
   cursor: not-allowed;
+
+  color: var(--red-variant);
 }
 
-.hover-cta-color:hover {
+.hover-cta-color:hover:active {
   color: var(--cta-background-color);
 }
 

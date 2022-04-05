@@ -289,14 +289,13 @@ a {
   overflow-y: scroll;
 }
 
-.cta-text {
-  color: var(--cta-background-color);
-}
-
 .cta-text-hover:hover {
   color: var(--cta-background-color);
 }
 
+.cta-text-active {
+  color: var(--cta-background-color);
+}
 .margin-none {
   margin: 0;
 }

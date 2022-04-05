@@ -49,3 +49,7 @@
 .code-demo {
   max-width: 40rem;
 }
+
+#installation {
+  height: 100vh;
+}
