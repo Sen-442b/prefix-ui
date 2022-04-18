@@ -27,6 +27,7 @@
 
   height: 100%;
   box-sizing: border-box;
+  z-index: 999;
 }
 .doc-aside-nav {
   height: 100%;
@@ -47,4 +48,8 @@
 
 .code-demo {
   max-width: 40rem;
+}
+
+#installation {
+  height: 100vh;
 }
