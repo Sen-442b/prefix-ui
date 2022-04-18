@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <link rel="stylesheet" href="./source/toast.css" />
+  <body>
+    <button id="open-top-left" class="btn btn-cta">Open Top left Toast</button>
+    <button id="open-top-right" class="btn btn-cta">
+      Open Top Right Toast
+    </button>
+    <button id="open-bottom-left" class="btn btn-cta">
+      Open Bottom Left Toast
+    </button>
+    <button id="open-bottom-right" class="btn btn-cta">
+      Open Bottom Right Toast
+    </button>
+    <div
+      class="alert alert-success flex-spc-btwn toast pos-fix-top-left display-none"
+      id="toast-top-left"
+    >
+      <span><i class="fas fa-check-circle"></i> Item added to cart</span>
+      <span class="cursor-pointer" id="close-top-left" title="Close">
+        <i class="fas fa-times-circle"></i>
+      </span>
+    </div>
+
+    <div
+      class="alert alert-danger flex-spc-btwn toast pos-fix-top-right display-none"
+      id="toast-top-right"
+    >
+      <span><i class="fas fa-exclamation-circle"></i> Item Removed</span>
+      <span class="cursor-pointer" id="close-top-right" title="Close"
+        ><i class="fas fa-times-circle"></i>
+      </span>
+    </div>
+    <div
+      class="alert alert-success flex-spc-btwn toast pos-fix-bottom-left display-none"
+      id="toast-bottom-left"
+    >
+      <span><i class="fas fa-check-circle"></i> Item added to cart</span>
+      <span class="cursor-pointer" id="close-bottom-left" title="Close">
+        <i class="fas fa-times-circle"></i>
+      </span>
+    </div>
+    <div
+      class="alert alert-danger flex-spc-btwn toast pos-fix-bottom-right display-none"
+      id="toast-bottom-right"
+    >
+      <span><i class="fas fa-exclamation-circle"></i> Item removed</span>
+      <span class="cursor-pointer" id="close-bottom-right" title="Close">
+        <i class="fas fa-times-circle"></i>
+      </span>
+    </div>
+  </body>
+
+  <script>
+    const openTopLeftToast = document.querySelector("#open-top-left");
+    const openTopRightToast = document.querySelector("#open-top-right");
+    const openBottomLeftToast = document.querySelector("#open-bottom-left");
+    const openBottomRightToast = document.querySelector("#open-bottom-right");
+    const closeTopLeftToast = document.querySelector("#close-top-left");
+    const closeTopRightToast = document.querySelector("#close-top-right");
+    const closeBottomLeftToast = document.querySelector("#close-bottom-left");
+    const closeBottomRightToast = document.querySelector("#close-bottom-right");
+
+    const toastTopLeft = document.querySelector("#toast-top-left");
+    const toastTopRight = document.querySelector("#toast-top-right");
+    const toastBottomLeft = document.querySelector("#toast-bottom-left");
+    const toastBottomRight = document.querySelector("#toast-bottom-right");
+
+    function hideToast(ele) {
+      ele.classList.add("display-none");
+    }
+
+    function displayToastTemp(ele) {
+      ele.classList.remove("display-none");
+
+      setTimeout(
+        () =>
+          ![...ele.classList].includes("display-none") &&
+          ele.classList.add("display-none"),
+        4000
+      );
+    }
+
+    openTopLeftToast.addEventListener("click", () =>
+      displayToastTemp(toastTopLeft)
+    );
+    closeTopLeftToast.addEventListener("click", () => hideToast(toastTopLeft));
+    openTopRightToast.addEventListener("click", () =>
+      displayToastTemp(toastTopRight)
+    );
+    closeTopRightToast.addEventListener("click", () =>
+      hideToast(toastTopRight)
+    );
+
+    openBottomLeftToast.addEventListener("click", () =>
+      displayToastTemp(toastBottomLeft)
+    );
+    closeBottomLeftToast.addEventListener("click", () =>
+      hideToast(toastBottomLeft)
+    );
+
+    openBottomRightToast.addEventListener("click", () =>
+      displayToastTemp(toastBottomRight)
+    );
+    closeBottomRightToast.addEventListener("click", () =>
+      hideToast(toastBottomRight)
+    );
+  </script>
+</html>

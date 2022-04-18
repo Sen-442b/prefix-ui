@@ -1,0 +1,32 @@
+@import url("../../../global.css");
+
+.toast {
+  max-width: 20rem;
+}
+
+.pos-fix-top-left {
+  position: fixed;
+  top: 1rem;
+  left: 1.5rem;
+  z-index: 99999999;
+}
+.pos-fix-top-right {
+  position: fixed;
+  top: 1rem;
+  right: 1.5rem;
+  z-index: 99999999;
+}
+
+.pos-fix-bottom-left {
+  position: fixed;
+  bottom: 1rem;
+  left: 1.5rem;
+  z-index: 99999999;
+}
+
+.pos-fix-bottom-right {
+  position: fixed;
+  bottom: 1rem;
+  right: 1.5rem;
+  z-index: 99999999;
+}

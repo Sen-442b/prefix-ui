@@ -1,0 +1,9 @@
+@import url("../../../global.css");
+
+.rating-positive {
+  color: #ffbf00;
+}
+
+.rating-negative {
+  color: var(--grey-text-color);
+}
