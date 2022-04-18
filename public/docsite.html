@@ -136,6 +136,9 @@
           <li><a href="#list" class="cta-text-hover">List</a></li>
           <li><a href="#modal" class="cta-text-hover">Modal</a></li>
           <li><a href="#navigation" class="cta-text-hover">Navigation</a></li>
+          
+          <li><a href="#rating" class="cta-text-hover">Rating</a></li>
+          <li><a href="#toast" class="cta-text-hover">Toast</a></li>
           <li><a href="#text-utils" class="cta-text-hover">Typography</a></li>
         </ul>
       </aside>
@@ -1845,6 +1848,139 @@
             </div>
           </div>
         </div>
+        <div id="rating">
+          <div class="content-intro">
+            <h3 class="fs-lrg">Rating</h3>
+            <h5>
+             Rating is usually visual representation to show  the quality of product/services from poor to best
+            </h5>
+          </div>
+          <div class="content-showcase">
+            <h4 class="fs-mdm">Usage</h4>
+            <p>Copy the code snippet and modify it according to your requirements</p>
+            <h5 class="fs-mdm">Read only rating</h5>
+            <div class="component-display">
+              <div class="avatar-container">
+                <div class="rating" title="Rated 4 out of 5">
+                  <span class="rating-positive" aria-hidden="true"><i class="fas fa-star"></i></span
+                  ><span class="rating-positive" aria-hidden="true"><i class="fas fa-star"></i></span
+                  ><span class="rating-positive" aria-hidden="true"><i class="fas fa-star"></i></span
+                  ><span class="rating-positive" aria-hidden="true"><i class="fas fa-star"></i></span
+                  ><span class="rating-negative"><i class="fas fa-star"></i></span
+                  ><span class="fs-sml box-shadow-uni">
+                    4.0/5 <i class="fas fa-star rating-positive "></i
+                  ></span>
+                </div>
+             
+              </div>
+            </div>
+            <div class="code-demo">
+              <iframe
+                src="https://carbon.now.sh/embed/gNsYMZkvA8nNy5cGcpzZ"
+                class="text-align-center"
+                style="
+                  width: 100%;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <div id="toast">
+          <div class="content-intro">
+            <h3 class="fs-lrg">Toast</h3>
+            <h5>
+         Toasts are usually created to show messages or popups on the screen for a short period of time
+            </h5>
+          </div>
+          <div class="content-showcase">
+            <h4 class="fs-mdm">Usage</h4>
+            <p>Copy the code snippet and use the preferred toast according to your requirements</p>
+            <div class="component-display">
+              <div class="avatar-container">
+                <button id="open-top-left" class="btn btn-cta">Open Top left Toast</button>
+                <button id="open-top-right" class="btn btn-cta">
+                  Open Top Right Toast
+                </button>
+                <button id="open-bottom-left" class="btn btn-cta">
+                  Open Bottom Left Toast
+                </button>
+                <button id="open-bottom-right" class="btn btn-cta">
+                  Open Bottom Right Toast
+                </button>
+                <div
+                  class="alert alert-success flex-spc-btwn toast pos-fix-top-left display-none"
+                  id="toast-top-left"
+                >
+                  <span><i class="fas fa-check-circle"></i> Item added to cart</span>
+                  <span class="cursor-pointer" id="close-top-left" title="Close">
+                    <i class="fas fa-times-circle"></i>
+                  </span>
+                </div>
+            
+                <div
+                  class="alert alert-danger flex-spc-btwn toast pos-fix-top-right display-none"
+                  id="toast-top-right"
+                >
+                  <span><i class="fas fa-exclamation-circle"></i> Item Removed</span>
+                  <span class="cursor-pointer" id="close-top-right" title="Close"
+                    ><i class="fas fa-times-circle"></i>
+                  </span>
+                </div>
+                <div
+                  class="alert alert-success flex-spc-btwn toast pos-fix-bottom-left display-none"
+                  id="toast-bottom-left"
+                >
+                  <span><i class="fas fa-check-circle"></i> Item added to cart</span>
+                  <span class="cursor-pointer" id="close-bottom-left" title="Close">
+                    <i class="fas fa-times-circle"></i>
+                  </span>
+                </div>
+                <div
+                  class="alert alert-danger flex-spc-btwn toast pos-fix-bottom-right display-none"
+                  id="toast-bottom-right"
+                >
+                  <span><i class="fas fa-exclamation-circle"></i> Item removed</span>
+                  <span class="cursor-pointer" id="close-bottom-right" title="Close">
+                    <i class="fas fa-times-circle"></i>
+                  </span>
+                </div>
+               
+              </div>
+            </div>
+            <div class="code-demo">
+              <iframe
+                src="https://carbon.now.sh/embed/0f5q1jAsFdgp0KNHNWir"
+                class="text-align-center"
+                style="
+                  width: 100%;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+            <h5 class="fs-mdm">JavaScript</h5>
+            <p>Note:- do not copy paste this code snippet unless you want to modify the code</p>  <iframe
+            src="https://carbon.now.sh/embed/hA18rsQgJ0Dn58fbVhJ0"
+            class="text-align-center"
+            style="
+              width: 100%;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+          </div>
+        </div>
         <div id="text-utils">
           <div class="content-intro">
             <h3 class="fs-lrg">Typography</h3>
@@ -1886,4 +2022,63 @@
       </main>
     </div>
   </body>
+
+
+  <script>
+
+  /*FOR TOAST*/
+    const openTopLeftToast = document.querySelector("#open-top-left");
+    const openTopRightToast = document.querySelector("#open-top-right");
+    const openBottomLeftToast = document.querySelector("#open-bottom-left");
+    const openBottomRightToast = document.querySelector("#open-bottom-right");
+    const closeTopLeftToast = document.querySelector("#close-top-left");
+    const closeTopRightToast = document.querySelector("#close-top-right");
+    const closeBottomLeftToast = document.querySelector("#close-bottom-left");
+    const closeBottomRightToast = document.querySelector("#close-bottom-right");
+
+    const toastTopLeft = document.querySelector("#toast-top-left");
+    const toastTopRight = document.querySelector("#toast-top-right");
+    const toastBottomLeft = document.querySelector("#toast-bottom-left");
+    const toastBottomRight = document.querySelector("#toast-bottom-right");
+
+    function hideToast(ele) {
+      ele.classList.add("display-none");
+    }
+
+    function displayToastTemp(ele) {
+      ele.classList.remove("display-none");
+
+      setTimeout(
+        () =>
+          ![...ele.classList].includes("display-none") &&
+          ele.classList.add("display-none"),
+        4000
+      );
+    }
+
+    openTopLeftToast.addEventListener("click", () =>
+      displayToastTemp(toastTopLeft)
+    );
+    closeTopLeftToast.addEventListener("click", () => hideToast(toastTopLeft));
+    openTopRightToast.addEventListener("click", () =>
+      displayToastTemp(toastTopRight)
+    );
+    closeTopRightToast.addEventListener("click", () =>
+      hideToast(toastTopRight)
+    );
+
+    openBottomLeftToast.addEventListener("click", () =>
+      displayToastTemp(toastBottomLeft)
+    );
+    closeBottomLeftToast.addEventListener("click", () =>
+      hideToast(toastBottomLeft)
+    );
+
+    openBottomRightToast.addEventListener("click", () =>
+      displayToastTemp(toastBottomRight)
+    );
+    closeBottomRightToast.addEventListener("click", () =>
+      hideToast(toastBottomRight)
+    );
+  </script>
 </html>
