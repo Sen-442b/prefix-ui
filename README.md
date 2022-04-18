@@ -29,5 +29,7 @@ Copy and paste this code snipet inside the `<head>` tag of you document
 - Input
 - Modal
 - Navigation
+- Typography
+- List
 
 Checkout the [Documentation](https://prefix-ui.netlify.app/public/docsite.html) for more info
